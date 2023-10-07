@@ -32,8 +32,6 @@ async def start(client, message):
     user = message.from_user
     await db.add_user(client, message)                
     button = InlineKeyboardMarkup([[
-        InlineKeyboardButton("👨‍💻 Dᴇᴠꜱ 👨‍💻", callback_data='dev')
-        ],[
         InlineKeyboardButton('📯 Uᴩᴅᴀᴛᴇꜱ', url='https://t.me/renamebotus'),
         InlineKeyboardButton('💁‍♂️ Sᴜᴩᴩᴏʀᴛ', url='https://t.me/renamebotus')
         ],[
@@ -54,8 +52,6 @@ async def cb_handler(client, query: CallbackQuery):
             text=Txt.START_TXT.format(query.from_user.mention),
             disable_web_page_preview=True,
             reply_markup = InlineKeyboardMarkup([[
-                InlineKeyboardButton("👨‍💻 Dᴇᴠꜱ 👨‍💻", callback_data='dev')
-                ],[
                 InlineKeyboardButton('📯 Uᴩᴅᴀᴛᴇꜱ', url='https://t.me/renamebotus'),
                 InlineKeyboardButton('💁‍♂️ Sᴜᴩᴩᴏʀᴛ', url='https://t.me/renamebotus')
                 ],[
