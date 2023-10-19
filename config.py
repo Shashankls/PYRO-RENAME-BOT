@@ -28,7 +28,7 @@ class Config(object):
     # pyro client config
     API_ID    = os.environ.get("API_ID", "16621664")
     API_HASH  = os.environ.get("API_HASH", "8b283f2943729318995738b5963f0bcc")
-    BOT_TOKEN = os.environ.get("BOT_TOKEN", "6604259438:AAF71dmTKSWqFKohgkVZ1DNTNzO31S__aeM") 
+    BOT_TOKEN = os.environ.get("BOT_TOKEN", "6853433838:AAG34iH7NOVsDQQfh8eoeQqeaEXarYCy4nk") 
    
     # database config
     DB_NAME = os.environ.get("DB_NAME","pyro-botz")     
@@ -39,7 +39,7 @@ class Config(object):
     START_PIC   = os.environ.get("START_PIC", "")
     ADMIN       = [int(admin) if id_pattern.search(admin) else admin for admin in os.environ.get('ADMIN', '').split()]
     FORCE_SUB   = os.environ.get("FORCE_SUB", "") 
-    LOG_CHANNEL = int(os.environ.get("LOG_CHANNEL", "-1001880053431"))
+    LOG_CHANNEL = int(os.environ.get("LOG_CHANNEL", "-1001996148537"))
 
     # wes response configuration     
     WEBHOOK = bool(os.environ.get("WEBHOOK", True))
